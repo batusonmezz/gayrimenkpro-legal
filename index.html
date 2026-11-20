@@ -112,7 +112,7 @@
 
   <header>
     <h1>Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-    <p class="sub">Gayrimenk Pro Mobil Uygulaması · Son güncelleme: 10 Ağustos 2026</p>
+    <p class="sub">Gayrimenk Pro Mobil Uygulaması · Son güncelleme: 20 Kasım 2026</p>
   </header>
 
   <p>Bu metin, Gayrimenk Pro mobil uygulamasını ("Uygulama") kullanan kişilerin kişisel verilerinin işlenmesine ilişkin olarak, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında hazırlanmış aydınlatma metni ve gizlilik politikasıdır. Uygulamayı kullanarak bu metinde açıklanan veri işleme uygulamalarını okuduğunuzu ve anladığınızı kabul etmiş olursunuz.</p>
@@ -154,6 +154,10 @@
       <td>Hesap Bilgileri</td>
       <td>Kullanıcı hesabı, rol bilgisi (emlakçı / mal sahibi / kiracı), profil fotoğrafı</td>
     </tr>
+    <tr>
+      <td>Cihaz ve Bildirim Bilgileri</td>
+      <td>Uygulamanın cihazınızda oluşturduğu rastgele kurulum kimliği, cihaz platformu (iOS / Android), bildirim izni durumu, bildirim anahtarı (push token) ve size gönderilen bildirimlerin kayıtları</td>
+    </tr>
   </table>
 
   <div class="box">
@@ -163,12 +167,15 @@
 
   <h2>3. Cihaz İzinleri</h2>
   <p>Uygulama, cihazınızın kamerasına ve fotoğraf galerisine <strong>yalnızca sizin başlattığınız işlemler sırasında</strong> erişir: kimlik belgesi fotoğrafı, ödeme dekontu veya profil fotoğrafı yüklerken. Uygulama arka planda fotoğraf çekmez, galerinizi taramaz ve konum, kişiler, mikrofon veya arama kayıtları gibi verilere erişmez.</p>
+  <p><strong>Bildirimler:</strong> Uygulama, ödeme ve kira süreçlerindeki gelişmeleri size iletebilmek için bildirim izni ister. Bu izni vermek isteğe bağlıdır; izin vermediğinizde ya da sonradan cihaz ayarlarından kapattığınızda Uygulamanın diğer özellikleri çalışmaya devam eder. İzin verdiğinizde, cihazınıza bildirim ulaştırılabilmesi için bildirim altyapısının oluşturduğu bildirim anahtarı (push token) hesabınızla ilişkilendirilerek sunucularımızda saklanır. Aynı hesabın farklı cihazlarını ayırt edebilmek için Uygulamanın oluşturduğu rastgele bir kurulum kimliği, cihaz platformu ve bildirim izni durumu da kaydedilir; bu bilgiler IMEI, seri numarası veya reklam kimliği gibi cihaza ait kalıcı kimlikleri içermez.</p>
+  <p>Bildirim gönderilen durumlar: ödemeniz onaylandığında veya dekontunuz reddedildiğinde, kira bedeliniz güncellendiğinde (emlakçınız bildirmeyi seçerse), henüz ödenmemiş kira için ödeme gününe 3 gün kala ve ödeme günü; emlakçı ve mal sahipleri için ise yeni bir ödeme dekontu yüklendiğinde. Bildirim metinlerinde ad, tutar gibi kişisel bilgiler yer almaz; ayrıntıları görmek için Uygulamayı açmanız gerekir. Bildirimler reklam veya pazarlama amacıyla kullanılmaz.</p>
 
   <h2>4. Kişisel Verilerin İşlenme Amaçları</h2>
   <p>Toplanan kişisel veriler aşağıdaki amaçlarla işlenir:</p>
   <ul>
     <li>Kira sözleşmelerinin oluşturulması, saklanması ve yönetilmesi</li>
     <li>Kira ödemelerinin takibi, ödeme dekontlarının kaydı ve onaylanması</li>
+    <li>Ödeme ve dekont durumları, kira bedeli değişiklikleri ve yaklaşan ödemeler hakkında bildirim gönderilmesi</li>
     <li>Mal sahibi, kiracı ve emlakçı arasındaki kira ilişkisinin yürütülmesi</li>
     <li>Kullanıcı hesaplarının oluşturulması ve kimlik doğrulaması</li>
     <li>Taşınmaz ve taraf bilgilerinin kayıt altına alınması</li>
@@ -192,17 +199,17 @@
   </div>
   <p>Avrupa Birliği, Avrupa Veri Koruma Tüzüğü (GDPR) kapsamında yüksek düzeyde veri koruma standartlarına sahiptir. Verileriniz, aktarıldığı ortamda da bu politikada belirtilen güvenlik önlemleriyle korunur.</p>
 
-  <h3>Yapay zekâ destekli sözleşme asistanı</h3>
+  <h3>Bildirim hizmetleri</h3>
   <div class="box">
-    <p>Uygulamada, sözleşme metnini incelemeye ve önerilerde bulunmaya yarayan isteğe bağlı bir yapay zekâ özelliği bulunur. <strong>Bu özelliği kullandığınızda</strong>, ilgili sözleşme metni — içinde yer alan ad, adres ve tutar gibi bilgilerle birlikte — yanıt üretilebilmesi amacıyla <strong>Anthropic PBC</strong> (Amerika Birleşik Devletleri) tarafından işletilen yapay zekâ servisine iletilir.</p>
-    <p>Bu iletim yalnızca özelliği kullandığınız anda ve yalnızca o işlem için gerçekleşir. Anthropic'in ticari API koşulları gereği, gönderilen içerik yapay zekâ modellerinin eğitiminde kullanılmaz. Özelliği kullanmadığınız sürece hiçbir veriniz bu servise iletilmez.</p>
+    <p>Bildirimlerin cihazınıza ulaştırılması için bildirim anahtarınız ve bildirim metni (başlık ve kısa açıklama) şu hizmet sağlayıcılara iletilir: bildirim gönderim altyapısı olarak <strong>Expo</strong> (650 Industries, Inc., Amerika Birleşik Devletleri); Android cihazlarda <strong>Google Firebase Cloud Messaging</strong> (Google), iOS cihazlarda <strong>Apple Push Notification service</strong> (Apple). Bu sağlayıcıların sunucuları yurt dışında bulunabilir. Expo, bildirim anahtarlarını gönderim için saklar; bildirim içeriğini Google veya Apple'a ilettikten sonra siler.</p>
+    <p>Bu iletim yalnızca bildirimin teslimi için yapılır. Bildirimle birlikte yalnızca Uygulamada ilgili ekranı açmaya yarayan teknik bir kayıt numarası gönderilir; ad, tutar, sözleşme ve ödeme ayrıntılarınız bu sağlayıcılara iletilmez.</p>
   </div>
 
   <h2>7. Kişisel Verilerin Aktarıldığı Taraflar</h2>
   <p>Kişisel verileriniz, aşağıdaki durumlar dışında üçüncü kişilerle paylaşılmaz:</p>
   <ul>
     <li><strong>Hizmet sağlayıcılar:</strong> Bulut altyapı ve depolama hizmeti sağlayan Supabase gibi teknik altyapı sağlayıcıları (yalnızca hizmetin işletilmesi amacıyla).</li>
-    <li><strong>Yapay zekâ servis sağlayıcısı:</strong> Yalnızca yapay zekâ destekli sözleşme asistanını kullandığınızda, 6. bölümde açıklandığı şekilde Anthropic PBC.</li>
+    <li><strong>Bildirim hizmeti sağlayıcıları:</strong> Bildirimlerin cihazınıza ulaştırılması amacıyla, 6. bölümde açıklandığı şekilde Expo, Google (Android) ve Apple (iOS).</li>
     <li><strong>Kira ilişkisinin tarafları:</strong> Bir kira sözleşmesinin tarafları (emlakçı, mal sahibi, kiracı), yalnızca ilgili oldukları sözleşme kapsamındaki verilere, rollerine göre sınırlı biçimde erişebilir.</li>
     <li><strong>Yasal merciler:</strong> Yasal bir yükümlülük veya resmi talep hâlinde yetkili kamu kurum ve kuruluşları.</li>
   </ul>
@@ -260,6 +267,16 @@
       <td>IBAN bilgisi</td>
       <td>İlgili ödeme kaydının saklama süresiyle aynı</td>
       <td>VUK m. 253</td>
+    </tr>
+    <tr>
+      <td>Bildirim anahtarı (push token)</td>
+      <td>Oturumunuzu kapattığınızda, bildirim iznini kapattığınızda (Uygulamayı bir sonraki açışınızda) veya hesabınızı sildiğinizde silinir</td>
+      <td>Amaçla sınırlılık ilkesi</td>
+    </tr>
+    <tr>
+      <td>Kurulum kimliği, cihaz kaydı ve bildirim kayıtları</td>
+      <td>Hesap silinene kadar</td>
+      <td>Amaçla sınırlılık ilkesi</td>
     </tr>
   </table>
 
